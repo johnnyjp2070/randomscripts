@@ -18,13 +18,12 @@ function addDigits(number) {
 
 var num = 999999999999999;
 
-var toAdd = spltConv(num);
-console.log(toAdd);
-var result = addDigits(toAdd);
-while (result > 9){
-    var con2 = spltConv(result);
+// var toAdd = spltConv(num);
+// console.log(toAdd);
+// var result = addDigits(toAdd);
+while (num > 9){
+    var con2 = spltConv(num);
     var result2 = addDigits(con2);
     console.log(result2);
-    result = result2;
-} 
-console.log(result);
+    num = result2;
+}
